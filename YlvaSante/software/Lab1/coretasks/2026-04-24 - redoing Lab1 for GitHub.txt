@@ -1,0 +1,19 @@
+#2026-04-23
+# -p creates parent folders
+
+mkdir -p /drives/c/users/admin/Ylva/GitHub/programming_for_bio/data/Lab1/coretasks
+mkdir -p /drives/c/users/admin/Ylva/GitHub/programming_for_bio/results/Lab1/coretasks
+mkdir -p /drives/c/users/admin/Ylva/GitHub/programming_for_bio/software/Lab1/coretasks
+mkdir -p /drives/c/users/admin/Ylva/GitHub/programming_for_bio/runs/Lab1/coretasks
+
+cp text_file.txt /drives/c/users/admin/Ylva/GitHub/Programming_for_bio/Data/Lab1/
+
+awk '/^#/{filename=$2 ".txt"} {print > filename}' text_file.txt 
+
+grep -ci "Apollo" *.txt
+
+echo "Date,Word,Count" > results.csv && grep -ci "Apollo" *.txt | awk -F'[/:]' '{print $1 "," "Apollo" "," $NF}' >> results.csv
+
+mv results.csv /drives/c/Users/Admin/Ylva/GitHub/Programming_for_bio/results/Lab1/coretasks/
+
+mv /drives/c/Users/Admin/Dropbox/Education/SU/Programmering\ för\ bioingenjörer/Modul\ 1/Lab1/2026-04-24\ -\ redoing\ Lab1\ for\ GitHub.txt /drives/c/Users/Admin/Ylva/GitHub/Programming_for_bio/software/Lab1/

@@ -1,0 +1,17 @@
+#2026-04-23
+# -p creates parent folders
+
+mkdir -p /c/users/admin/Ylva/programing_for_biologists/data/Lab1/coretasks
+mkdir -p /c/users/admin/Ylva/programing_for_biologists/results/Lab1/coretasks
+mkdir -p /c/users/admin/Ylva/programing_for_biologists/runs/Lab1/coretasks
+mkdir -p /c/users/admin/Ylva/programing_for_biologists/software/Lab1/coretasks
+
+awk '/^#/{filename=$2 ".txt"} {print > filename}' text_file.txt 
+
+grep -ci "Apollo" *.txt
+
+echo "Date,Word,Count" > results.csv && grep -ci "Apollo" *.txt | awk -F'[/:]' '{print $1 "," "Apollo" "," $NF}' >> results.csv
+
+mv results.csv /c/Users/Admin/Ylva/Programing_for_biologists/results/Lab1/coretasks
+
+moba
