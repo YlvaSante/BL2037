@@ -20,4 +20,4 @@ software
 
 Image:
 
-![Extra1 picture](BL2037\images\Kitten.jpg)
+![Extra1 picture](Kitten.jpg)
