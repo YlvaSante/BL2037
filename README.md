@@ -3,4 +3,12 @@ Collaboration directory for lab tasks in Programming for Biologists (SU, spring 
 
 This repository contains: 
 emelies part
+Containing: 
+data
+
+
+
 Ylvas part
+
+
+![Extra1 picture](BL2037\emelie\images\Kitten.jpg)
