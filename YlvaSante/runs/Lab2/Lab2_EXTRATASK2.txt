@@ -1,0 +1,52 @@
+# Lab 2
+# EXTRA TASK 1
+
+# in GitHub/BL2037/
+cd YlvaSante/
+
+# Creating README files with descriptions
+
+echo "# Data" > data/README.md
+echo "Contains crude data files from experiments (.fastq format?)." >> data/README.md
+
+echo "# Results" > results/README.md
+echo "Contains results from data analyses in output files." >> results/README.md
+
+echo "# Software" > software/README.md
+echo "Contains the coding (software) for running data analyses for experiments." >> software/README.md
+
+echo "# Results" > runs/README.md
+echo "Contains instructions for running data analyses." >> runs/README.md
+
+# EXTRA TASK 2
+
+# Download source file (Diandra's) to local computor GitHub/ folder, rename, copy into YlvaSante folder
+cd [BASE DIRECTORY]/GitHub/ 
+git clone https://github.com/DiandraDaum/Programming_for_bio.git
+mv Programming_for_bio/ Programming_for_bio_Diandra
+cp Programming_for_bio_Diandra/runs/design_local.sh BL2037/YlvaSante/
+
+# Analysing...
+cd BL2037/YlvaSante/
+grep -o '[eE3]' design_local.sh | wc -l # Output: 162
+
+# -o = only matching Word
+# [] matching any sign within bracket > sends match to a separate line
+# | = pipe > sending list of lines to wc -l = wordcount by line
+# output = total number of lines added together 
+
+
+# Documenting output
+nano design_local.sh
+"# YlvaSantes analysis:
+ # Total count of e, E and 3: 162"
+
+# Saving edits locally
+git add design_local.sh
+git commit -m "Extra Task 2 - done (counting number of e, E, 3 added together in total)"
+
+# Updating GitHub version before pushing, and pushing
+git pull origin main
+git push origin main
+
+	

@@ -1,0 +1,27 @@
+# Lab 2
+# GitHub
+# Setting up
+
+# Directory: /home/Admin/.ssh/
+# File Public key:/home/Admin/.ssh/id_ed25519.pub
+
+cd /home/Admin/.ssh/
+cat ~/.ssh/id_ed25519.pub
+
+# Public key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEoKZAr1suCKoBb+H60YSHa6P+6rhGicMDOyNqGq9OX                                               K ylvasantesson@gmail.com
+
+
+# key fingerprint: SHA256:F1LGpDlYVLiYrFjrtVz6rLev2DwO2jJORwxbOCtsF9Q ylvasantesson@gmail.com
+
++--[ED25519 256]--+
+|    .. .o==      |
+|   . .Eo.=.      |
+|    =.oo=..      |
+| .  .O+ .o .     |
+|  +o+oo S .      |
+| ..oo.. ..       |
+|   ..oo+         |
+|   .+++*o        |
+|   .oo+=O=.      |
++----[SHA256]-----+
+  
