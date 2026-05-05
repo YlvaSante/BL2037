@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 # 1. Defining the pathway to the .csv file (standing in software for running the script, fetching the data file from the data folder)
-file_path = "../data/gene_expression.csv"
+file_path = "../../data/gene_expression.csv"
 
 # Checking whether the file exists before trying to load it, to avoid errors and give a helpful message if it's not found
 if not os.path.exists(file_path):

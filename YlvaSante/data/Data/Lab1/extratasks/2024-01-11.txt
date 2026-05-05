@@ -1,3 +1,0 @@
-# 2024-01-11
-The "Vega" project team is running into issues with the database deployment. Security team is investigating.
-
