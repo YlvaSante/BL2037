@@ -1,3 +1,0 @@
-# 2024-04-26
-Finalizing the deployment strategy for the "Apollo" project. This is a major milestone.
-

@@ -1,3 +1,0 @@
-# 2024-05-03
-Received a new client update regarding the "Vega" project. The team is focusing on the database integration.
-

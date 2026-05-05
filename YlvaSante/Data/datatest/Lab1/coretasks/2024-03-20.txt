@@ -1,3 +1,0 @@
-# 2024-03-20
-Weekly planning meeting. Discussed the deployment strategy for the "Vega" project.
-

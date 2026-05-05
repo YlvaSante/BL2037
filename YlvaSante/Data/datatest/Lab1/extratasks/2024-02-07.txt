@@ -1,3 +1,0 @@
-# 2024-02-07
-A critical security update was pushed to production. This affects the main database.
-
