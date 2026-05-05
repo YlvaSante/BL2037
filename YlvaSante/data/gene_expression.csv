@@ -1,1 +1,23 @@
-404: Not Found
+GeneID,Condition,TPM,expression_level,Replicate
+BRCA1,Control,12.5,12.5,1
+TP53,Control,45.2,45.2,1
+EGFR,Control,110.4,110.4,1
+MYC,Control,85.1,85.1,1
+GAPDH,Control,500.5,500.5,1
+ACTB,Control,480.2,480.2,1
+KRAS,Control,22.3,22.3,1
+PTEN,Control,15.8,15.8,1
+BRCA1,Treated,8.4,8.4,2
+TP53,Treated,40.1,40.1,2
+EGFR,Treated,200.5,200.5,2
+MYC,Treated,150.2,150.2,2
+GAPDH,Treated,505.1,505.1,2
+ACTB,Treated,475.4,475.4,2
+KRAS,Treated,55.6,55.6,2
+PTEN,Treated,10.2,10.2,2
+IL6,Control,2.5,2.5,1
+IL6,Treated,45.8,45.8,2
+TNF,Control,1.2,1.2,1
+TNF,Treated,30.5,30.5,2
+VEGFA,Control,14.2,14.2,1
+VEGFA,Treated,28.9,28.9,2
