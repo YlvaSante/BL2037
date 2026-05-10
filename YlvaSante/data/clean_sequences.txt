@@ -1,0 +1,3 @@
+Processed: ATGC
+Processed: CCGG
+Processed: TTAA
