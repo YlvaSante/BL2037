@@ -11,4 +11,4 @@ sequence_a = ""
 
 for pp in ppb.build_peptides(structure[0]["A"]):
     sequence_a += pp.get_sequence()
-print(f"Sequence for Chain A:\n{sequence_a}")
+print(f"AA sequence for Chain A:\n{sequence_a}")
