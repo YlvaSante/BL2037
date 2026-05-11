@@ -1,4 +1,5 @@
-# Lab 4.1: Automating the script from lab 3 by using external file specifications
+# LAB 4
+# CORE TASK 1: Automating the script from lab 3 by using external file specifications
 
 import pandas as pd
 import matplotlib.pyplot as plt
