@@ -28,5 +28,5 @@ os.makedirs("../../results", exist_ok=True)
 plt.savefig(output_path, dpi=600)
 print(f"Graph has been saved in: {output_path}")
 
-# Displayingpython that it is done
+# Displaying that it is done
 plt.show()
