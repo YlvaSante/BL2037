@@ -14,8 +14,9 @@ def main():
     parser = argparse.ArgumentParser(description="Creating histogram from gene expression data via kommandoraden.")
 
     # 2. Adding two arguments defining the input and output paths: args.input and args.output, resp.
-    parser.add_argument("input_data", help="Pathway and name to the input file (.csv)")
-    parser.add_argument("output_results", help="Pathway and name for the output file (.png)")
+    # Adding "--" before the argument names to make them flags
+    parser.add_argument("-i","--input_data", help="Pathway and name to the input file (.csv)", required=True)
+    parser.add_argument("-o", "--output_results", help="Pathway and name for the output file (.png)", required=True)
 
     # 3. Parsing arguments
     args = parser.parse_args()
@@ -23,8 +24,12 @@ def main():
 ### CODING FROM LAB 3 ###
 
     # 4. Loading data
-    file_path = args.input_data
-    df = pd.read_csv(file_path)
+    # addition for core task 3: Using pandas to read the .csv file, but with the following parameters:
+    # sep=None in order for pandas to guess the delimiter
+    # engine='python' is required for sep=None to work
+    input_file = args.input_data
+    output_file = args.output_results   
+    df = pd.read_csv(input_file, sep=None, engine='python')
 
     # 5. Printing stats (same as lab 3)
     print(df.describe())
@@ -41,13 +46,13 @@ def main():
 
     # 8. Saving the plot in the results/lab4/ folder
     # Checking if the folder exists, otherwise create it
-    output_dir = os.path.dirname(args.output_results)
+    output_dir = os.path.dirname(output_file)
     if output_dir and not os.path.exists(output_dir):
         os.makedirs(output_dir)
 
     # Saving image with high resolution (600 dpi)
-    plt.savefig(args.output_results, dpi=600)
-    print(f"Done✅ Graph has been saved in: {args.output_results}")
+    plt.savefig(output_file, dpi=600)
+    print(f"Done✅ Graph has been saved in: {output_file}")
 
     # 9. Displaying that it is done
     # plt.show()
