@@ -34,7 +34,7 @@ def main():
     # print(f"\nPDB Seq:     {pdb_seq[:50]}...")
     # print(f"UniProt Seq: {uniprot_seq[:50]}...")
 
-    if pdb_seq == uniprot_seq:
+    if pdb_seq in uniprot_seq:
         # print("\nOUTCOME: Match")
         output_file = args.match_csv
         print(f"{args.id}: MATCH")
