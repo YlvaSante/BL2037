@@ -1,0 +1,12 @@
+#PyMOL commands
+
+# Gör molekylen till en snygg "boll-och-pinne"-modell (Ball and Stick)
+show spheres
+set sphere_scale, 0.25
+show sticks
+
+# Gör bakgrunden vit (ser oftast proffsigast ut i presentationer/tryck)
+bg_color white
+
+# Slå på snygga skuggor
+set ray_shadows, 1
