@@ -1,0 +1,24 @@
+# PyMOL script for superimposing AlphaFold predictions with PDB structures for the top 5 candidates with the highest structural discrepancies. This script loads the cleaned PDB files, colors them for distinction, and performs an alignment to visualize the differences.
+from pickle import load
+
+# Loading the cleaned PDB files for the top candidate and its corresponding AlphaFold prediction (3a1a_a_af_clean.pdb)
+load 3a1a_a_clean.pdb, pdb_3a1a
+load 3a1a_a_af_clean.pdb, af_3a1a
+
+# Coloring the structures for better visualization
+color gray80, pdb_3a1a
+color orange, af_3a1a
+
+# Aligning the AlphaFold prediction with the experimental PDB structure
+align af_3a1a, pdb_3a1a
+
+zoom
+
+# TOP 5 CANDIDATES FOR PYMOL VISUALIZATION 
+# These have the highest structural discrepancies to discuss
+# Protein_Chain  Avg_Local_RMSD_Å  High_Error_Residues_Count
+#       3a1a_a         45.009998                        132
+#       1uw3_a         40.900002                        106
+#       2l1a_a         39.610001                       1157
+#       1qm0_a         37.549999                        104
+#       2k1a_a         36.439999                        880
